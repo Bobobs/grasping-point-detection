@@ -79,8 +79,26 @@
     <div class="wrap">
       <h2>Overview</h2>
       <p>
-        Add a short description of your approach here. Since you’re not using YouTube or external hosts,
-        everything on this page loads from the repository’s <code>static/</code> folder for reliability.
+        In this work, we propose a new framework that
+        leverages semantic segmentation of clothes to further detect
+        optimal grasping points directly from RGB-D images. Our
+        framework involves a novel neural network architecture that
+        fuses self-attention and convolutional operations to extract potent
+        RGB-D features, facilitating the semantic segmentation of cloth
+        inner/outer edges and corners. The framework then couples a
+        hierarchy of these semantic features with corresponding depth
+        cues to identify the best grasping point candidates based on both
+        geometric and depth information. To evaluate the performance
+        of our framework, we introduce a novel RGB-D garment dataset
+        containing 298 RGB-D images of 12 distinct textile objects
+        annotated with corners and inner/outer edges. We benchmarked
+        the performance of our model against the state-of-the-art models
+        on both our own and the NYU Depth v2 datasets. Our model
+        surpasses the baseline by 1.1% on NYU Depth V2 and 0.95% on
+        our dataset. Our extensive experiments with a Kinova robotic
+        arm showed that in cluttered scenes, our proposed method can
+        achieve up to 27% higher grasping success than the baseline
+        model. 
       </p>
     </div>
   </section>
