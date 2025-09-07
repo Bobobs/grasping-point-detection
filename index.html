@@ -4,74 +4,65 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Grasping Point Detection</title>
-  <meta name="description" content="Project page for Grasping Point Detection with local images and video demos." />
-  <meta property="og:title" content="Grasping Point Detection" />
-  <meta property="og:description" content="Dataset preview, grasping direction visualization, and a cluttered-scene demo video." />
-  <meta property="og:image" content="static/images/dataset.png" />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Project page for Grasping Point Detection by Bobobs." />
+  <link rel="icon" type="image/x-icon" href="static/images/dataset.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{--wrap:1100px;--bg:#0c0f16;--card:#11182a;--border:#1c2c4d;--text:#e9eef8;--muted:#a8b4c9;}
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
-    a{color:#8cc6ff;text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-    header{padding:72px 0;background:linear-gradient(180deg,#0e1422,#10182b)}
-    h1{font-size:clamp(28px,6vw,56px);margin:0 0 8px}
-    p.lead{color:var(--muted);font-size:clamp(16px,2.6vw,20px);margin:0}
-    .authors{margin-top:10px;color:#dfe7ff}
-    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#172746;border:1px solid var(--border);color:#e6eefb}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#0e1220;color:#e9eef9;line-height:1.6}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{padding:72px 0;background:linear-gradient(180deg,#0e1220,#121625)}
+    h1{color:#fff;font-size:clamp(28px,6vw,56px);margin:0 0 10px}
+    p.lead{color:#cfd7e6;font-size:clamp(16px,2.6vw,20px);margin:0}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#1a2a4a;color:#e6eefb;text-decoration:none;border:1px solid #24385f}
     section{padding:32px 0}
     .grid{display:grid;gap:18px}
-    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
-    img,video{max-width:100%;height:auto;border-radius:12px}
-    pre.code{background:#0a1020;padding:14px;border-radius:12px;overflow:auto;border:1px solid var(--border)}
-    footer{border-top:1px solid var(--border);color:#97a6c3;padding:28px 0}
+    @media(min-width:900px){.grid.cols-2{grid-template-columns:2fr 1fr}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:#0e1424;color:#e9eef9;border:1px solid #1b2a4a;border-radius:16px;padding:18px}
+    pre.code{background:#0a1020;padding:14px;border-radius:12px;overflow:auto;border:1px solid #1b2a4a}
+    footer{border-top:1px solid #1b2a4a;color:#97a6c3;padding:28px 0}
+    img,video{max-width:100%;border-radius:12px}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <h1>Grasping Point Detection</h1>
-      <p class="lead">Local, self‑hosted demo page with images and a cluttered‑scene video. No external embeds.</p>
-      <div class="authors">By <strong>Bobobs</strong></div>
+      <p class="lead">Exploring dataset characteristics and grasping directions with visual demonstrations.</p>
       <div class="btns">
-        <a class="btn" href="https://github.com/Bobobs/grasping-point-detection">💻 Code (GitHub)</a>
-        <a class="btn" href="#media">🖼️ Media</a>
+        <a class="btn" href="#dataset">📊 Dataset</a>
+        <a class="btn" href="#results">🖼️ Results</a>
+        <a class="btn" href="#video">🎬 Video</a>
         <a class="btn" href="#method">📘 Overview</a>
       </div>
     </div>
   </header>
 
-  <!-- Media section uses your actual files: dataset.png, grasping_direction.jpg, cluttered.mp4 -->
-  <section id="media">
-    <div class="wrap">
-      <h2>Media</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Dataset Preview</h3>
-          <img src="static/images/dataset.png" alt="Dataset preview" />
-          <p class="lead">A quick look at the dataset used for grasping point detection.</p>
-        </div>
-        <div class="card">
-          <h3>Grasping Direction Visualization</h3>
-          <img src="static/images/grasping_direction.jpg" alt="Grasping direction visualization" />
-          <p class="lead">Illustration of the estimated grasping direction on sample data.</p>
-        </div>
+  <section id="dataset">
+    <div class="wrap grid cols-2">
+      <div class="card">
+        <h2>Dataset</h2>
+        <img src="static/images/dataset.png" alt="Dataset overview" />
+        <p>This image illustrates the dataset used in our experiments.</p>
       </div>
+      <div class="card">
+        <h2>Grasping Direction</h2>
+        <img src="static/images/grasping_direction.jpg" alt="Grasping direction visualization" style="max-width:80%" />
+        <p>This figure shows examples of grasping directions.</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="card" style="margin-top:18px">
-        <h3>Cluttered Scene Demo (MP4)</h3>
-        <video controls loop muted playsinline preload="metadata">
-          <source src="static/videos/cluttered.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p class="lead">Short demonstration on a cluttered environment.</p>
-      </div>
+  <section id="video">
+    <div class="wrap">
+      <h2>Cluttered Scene Demo</h2>
+      <video controls loop muted playsinline>
+        <source src="static/videos/cluttered.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>Demonstration of grasping point detection in a cluttered environment.</p>
     </div>
   </section>
 
@@ -98,15 +89,19 @@
         our dataset. Our extensive experiments with a Kinova robotic
         arm showed that in cluttered scenes, our proposed method can
         achieve up to 27% higher grasping success than the baseline
-        model. 
+        model.
       </p>
     </div>
   </section>
 
   <footer>
-    <div class="wrap">© <span id="year"></span> Bobobs · Project page template adapted for local media.</div>
+    <div class="wrap">
+      <div>© <span id="year"></span> Bobobs · Grasping Point Detection Project Page</div>
+    </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
