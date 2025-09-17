@@ -23,7 +23,7 @@
     .card{background:#0e1424;color:#e9eef9;border:1px solid #1b2a4a;border-radius:16px;padding:18px}
     pre.code{background:#0a1020;padding:14px;border-radius:12px;overflow:auto;border:1px solid #1b2a4a}
     footer{border-top:1px solid #1b2a4a;color:#97a6c3;padding:28px 0}
-    img,video{max-width:100%;border-radius:12px}
+    img,video{width:100%;max-width:100%;border-radius:12px}
   </style>
 </head>
 <body>
@@ -59,7 +59,7 @@
   <section id="video">
     <div class="wrap">
       <h2>Cluttered Scene Demo</h2>
-      <video controls loop muted playsinline>
+      <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
         <source src="static/videos/cluttered.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -70,35 +70,27 @@
   <section id="timelines">
     <div class="wrap">
       <h2>Timelines</h2>
-      <p class="lead">Additional demo clips showing temporal behavior. Videos are stacked vertically for easy viewing.</p>
+      <p class="lead">Additional demo clips showing temporal behavior. All videos match the size of the cluttered demo.</p>
 
-      <div class="card" style="margin-bottom:18px">
-        <h3>Timeline 1</h3>
-        <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
-          <source src="static/videos/Timeline%201.mp4" type="video/mp4" />
-        </video>
-      </div>
+      <h3>Timeline 1</h3>
+      <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
+        <source src="static/videos/Timeline%201.mp4" type="video/mp4" />
+      </video>
 
-      <div class="card" style="margin-bottom:18px">
-        <h3>Timeline 2</h3>
-        <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
-          <source src="static/videos/Timeline%202.mp4" type="video/mp4" />
-        </video>
-      </div>
+      <h3>Timeline 2</h3>
+      <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
+        <source src="static/videos/Timeline%202.mp4" type="video/mp4" />
+      </video>
 
-      <div class="card" style="margin-bottom:18px">
-        <h3>Timeline 3</h3>
-        <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
-          <source src="static/videos/Timeline%203.mp4" type="video/mp4" />
-        </video>
-      </div>
+      <h3>Timeline 3</h3>
+      <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
+        <source src="static/videos/Timeline%203.mp4" type="video/mp4" />
+      </video>
 
-      <div class="card">
-        <h3>Timeline 4</h3>
-        <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
-          <source src="static/videos/Timeline%204.mp4" type="video/mp4" />
-        </video>
-      </div>
+      <h3>Timeline 4</h3>
+      <video controls loop muted playsinline preload="metadata" poster="static/images/dataset.png">
+        <source src="static/videos/Timeline%204.mp4" type="video/mp4" />
+      </video>
     </div>
   </section>
 
